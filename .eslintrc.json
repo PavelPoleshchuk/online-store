@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "import"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "ignorePatterns": [
+    "dist"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "project": [
+      "./tsconfig.json"
+    ],
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": "off",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/no-explicit-any": "warn"
+  }
+}

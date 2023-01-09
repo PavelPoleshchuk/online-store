@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online-Store</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="main">
+      <div class="filters-area">
+        <div class="global-filters">
+          <div class="reset">Reset Filters</div>
+          <div class="copy-link">Copy Link</div>
+        </div>
+        <div class="sort-filters">
+          <select name="sort" id="sort-selector" class="sort-selector">
+            <option value="sort-title" class="sort-title" disabled selected>Sort-options</option>
+            <option value="price-asc">price &#8679;</option>
+            <option value="price-desc">price &#8681;</option>
+            <option value="rating-asc">rating &#8679;<i class="gg-push-up"></i></option>
+            <option value="rating-desc">rating &#8681;</option>
+          </select>
+        </div>
+        <div class="category-filter">
+          <h3><i class="gg-list"></i>Category</h3>
+          <div class="category-filter__list">
+          </div>
+        </div>
+        <div class="brand-filter">
+          <h3><i class="gg-list"></i>Brand</h3>
+          <div class="brand-filter__list">
+          </div>
+        </div>
+        <div class="price-filter">
+          <h3><i class="gg-format-line-height"></i>Price</h3>
+          <div class="price-filter__slider">
+            <div class="values">€
+              <span id="range1">
+                0
+              </span>
+              <span> &dash; </span>
+              <span id="range2">
+                100
+              </span>
+            </div>
+            <div class="container">
+              <div class="slider-track"></div>
+              <input type="range" min="10" max="1749" value="10" id="slider-1">
+              <input type="range" min="10" max="1749" value="1749" id="slider-2">
+            </div>
+          </div>
+        </div>
+        <div class="stock-filter">
+          <h3><i class="gg-format-line-height"></i>Stock</h3>
+          <div class="stock-filter__slider">
+            <div class="values">
+              <span id="range3">
+                0
+              </span>
+              <span> &dash; </span>
+              <span id="range4">
+                100
+              </span>
+            </div>
+            <div class="container">
+              <div class="slider-track-2"></div>
+              <input type="range" min="2" max="150" value="2" id="slider-3">
+              <input type="range" min="2" max="150" value="150" id="slider-4">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="render-area"></div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+.brand-filter__list {
+  height: 120px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.brand-filter__item {
+  color: #BA3B0A;
+}

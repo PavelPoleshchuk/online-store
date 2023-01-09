@@ -1,0 +1,25 @@
+@import url('https://css.gg/list.css');
+@import url('https://css.gg/format-line-height.css');
+
+.category-filter__list {
+  height: 120px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.category-filter__item label {
+  text-transform: capitalize;
+  color: #BA3B0A;
+}
+
+.checkbox-item {
+  margin: 5px 0;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.checkbox {
+  margin: 0 5px;
+}

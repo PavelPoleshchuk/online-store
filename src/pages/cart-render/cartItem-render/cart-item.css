@@ -1,0 +1,144 @@
+.cart-item {
+  display: flex;
+  margin: 5px;
+  width: calc(100% - 10px);
+  border: 3px solid #b88572;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.item-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  width: 25px;
+  background-color: #2f4858;
+  color: #fff4eb;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.item-info {
+  display: flex;
+  width: 100%;
+}
+
+.item-info img {
+  width: 150px;
+  min-width: 150px;
+  height: 100px;
+  object-fit: cover;
+  object-position: 0% 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.item-info img:hover {
+  cursor: pointer;
+}
+
+.product-details {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+
+.product-details h2 {
+  width: 100%;
+  background-color: #2f4858;
+  color: #fff4eb;
+  padding: 2px 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.product-description {
+  font-size: 0.9em;
+}
+
+.product-other {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #b88572;
+  height: 25px;
+  color: #ede9d0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.item-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  border-radius: 5px;
+  color: #2f4858;
+  font-size: 1.1em;
+}
+
+.stock-control,
+.inc-dec-control,
+.amount-control {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.stock-control {
+  display: flex;
+  align-items: center;
+  background-color: #2f4858;
+  color: #fff4eb;
+  padding: 6px 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.inc-dec-control {
+  font-size: 1.2em;
+  background-color: #2f4858;
+  color: #fff4eb;
+  border-radius: 5px;
+}
+
+.amount-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b88572;
+  height: 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff4eb;
+}
+
+.button-plus,
+.button-minus {
+  box-shadow: none;
+  padding: 5px 12px;
+}
+
+.button-plus {
+  background: url('../../../assets/images/plus.svg') no-repeat center;
+  background-color: #ede9d0;
+  background-size: 60%;
+}
+
+.button-minus {
+  background: url('../../../assets/images/minus.svg') no-repeat center;
+  background-color: #ede9d0;
+  background-size: 60%;
+}
+
+.button-minus:hover,
+.button-plus:hover {
+  color: #fff4eb;
+  border: 3px solid #fff4eb;
+  background-color: #2f4858;
+  cursor: pointer;
+}

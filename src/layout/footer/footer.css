@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #b88572;
+}
+
+
+.repository a {
+  text-decoration: none;
+  color: #fff5ee;
+}
+
+.repository a:hover {
+  cursor: pointer;
+  color: #2F4858;
+}
+
+.year {
+  color: #fff5ee;
+}
+
+.rs-school {
+  width: 50px;
+  height: 30px;
+}
+
+.rs-school img {
+  max-width: 100%;
+}

@@ -1,0 +1,194 @@
+.wrapper {
+  position: relative;
+}
+
+.modal-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}
+
+.content-data {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .content-data {
+    flex-direction: column;
+  }
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 80%;
+  border: 3px solid #2f4858;
+  background-color: #ede9d0;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+    width: 90vw;
+  }
+}
+
+.personal-data,
+.card-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 45%;
+}
+
+.personal-data>* {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #2f4858;
+  color: #fff5ee;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+@media (max-width: 640px) {
+  .personal-data {
+    width: 100%;
+  }
+}
+
+.personal-data h2,
+.card-data h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #2f4858;
+  color: #fff5ee;
+  padding: 3px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.personal-data>div {
+  position: relative;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.personal-data input {
+  appearance: none;
+  color: #2f4858;
+  outline: none;
+  border: none;
+  font-size: 1.2em;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+@media (max-width: 640px) {
+  .personal-data input {
+    width: 70%;
+  }
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  width: 80%;
+  min-height: 200px;
+  border-radius: 5px;
+  background: rgb(237, 233, 208);
+  background: linear-gradient(201deg, rgba(237, 233, 208, 1) 0%, rgba(47, 72, 88, 1) 72%, rgba(184, 133, 114, 1) 100%);
+}
+
+.card-number {
+  position: relative;
+  display: flex;
+  height: 30px;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+.card-number img {
+  border-radius: 5px;
+  height: 100%;
+  object-fit: contain;
+  margin-right: 5px;
+}
+
+.card-number input {
+  appearance: none;
+  outline: none;
+  border: none;
+  font-size: 1.3em;
+  width: 80%;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.valid-data,
+.cvv-data {
+  position: relative;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #fff5ee;
+}
+
+.card-info input {
+  appearance: none;
+  outline: none;
+  border: none;
+  width: 50%;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.error {
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+  text-transform: none;
+  font-size: 0.9em;
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.confirm-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 30%;
+  padding: 5px;
+}

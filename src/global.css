@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF5EE;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.filters-area {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: #EDE9D0;
+  border-left: 3px solid #B88572;
+  border-right: 3px solid #B88572;
+}
+
+.filters-area h3 {
+  display: flex;
+  align-items: center;
+  color: #2F4858;
+  margin-bottom: 5px;
+}
+
+.filters-area h3 i {
+  margin-right: 5px;
+}
+
+.render-area {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  border-right: 3px solid #B88572;
+  background-color: #EDE9D0;
+  width: 70%;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+@media (max-height: 945px) {
+  .render-area {
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .render-area {
+    justify-content: center;
+  }
+}
+
+.global-filters {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.global-filters,
+.sort-filters,
+.category-filter,
+.brand-filter,
+.price-filter,
+.stock-filter {
+  border: 2px solid #B88572;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.reset,
+.copy-link {
+  color: #BA3B0A;
+  background-color: #B88572;
+  width: 40%;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.reset:hover,
+.copy-link:hover {
+  color: #FFF4EB;
+  background-color: #2F4858;
+  cursor: pointer;
+}
+
+.sort-filters {
+  display: flex;
+  justify-content: center;
+  height: 52px;
+}
+
+.sort-selector {
+  background-color: #b88572;
+  color: #ede9d0;
+  width: 60%;
+  border: none;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  outline: none;
+  text-align: center;
+  color: #ba3b0a;
+  font-size: 1.1em;
+  border-radius: 3px;
+}
+
+.sort-selector:hover {
+  color: #FFF4EB;
+  background-color: #2F4858;
+  cursor: pointer;
+}
+
+.sort-selector option {
+  appearance: none;
+  background-color: #ede9d0;
+  color: #2f4858;
+  font-size: 1em;
+  font-weight: bold;
+}
